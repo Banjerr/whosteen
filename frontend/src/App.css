@@ -1,0 +1,103 @@
+header.App-header, .about-info {
+  text-align: center;
+  margin: 2% 0 2%;
+}
+
+.about-info .chakra-image {
+  margin: 0 auto 2%;
+}
+
+.chakra-spinner.about-info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-picker .chakra-stack {
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+}
+
+.content-picker ul {
+  list-style-type: none;
+}
+
+.markdown img {
+  width: 100%;
+}
+
+html [data-rmiz-modal-overlay="visible"] {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.picture-type .image-event {
+  padding: 0;
+  margin-top: 0;
+}
+
+.picture-type .image-event .date-col,
+.picture-type .image-event .marker-col,
+.post-type .text-event .date-col,
+.post-type .text-event .marker-col {
+  display: none;
+}
+
+.picture-type img , .post-type img {
+  width: 100%;
+  max-width: 620px;
+}
+
+.picture-type:nth-child(even) h3,
+.post-type:nth-child(even) h3 {
+  text-align: right;
+}
+
+.about-info {
+  padding: 20px;
+  margin-bottom: 2%;
+}
+
+html .chakra-card {
+  background-color: #13274F;
+  width: 100%;
+  align-items: inherit;
+  color: #fff;
+}
+
+
+.event .marker-col span {
+  font-size: 22px;
+}
+
+span.chakra-checkbox__control {
+  background: #CE1141 !important;
+  border-color: #CE1141 !important;
+  color: #EAAA00 !important;
+}
+
+.chakra-card .chakra-button, #chakra-modal-share-modal .chakra-button {
+  background: #CE1141;
+  transition: all .2s ease-in-out;
+}
+
+.chakra-card .chakra-button:hover,
+#chakra-modal-share-modal .chakra-button:hover {
+  background: #EAAA00;
+}
+
+#chakra-modal--body-share-modal svg {
+  margin-bottom: 6%;
+}
+
+#chakra-modal--body-share-modal a {
+  margin: 0 4%;
+}
+
+#chakra-modal-share-modal {
+  text-align: center;
+}
+
+#chakra-modal--body-share-modal {
+  align-self: center;
+}
