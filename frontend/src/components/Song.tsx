@@ -24,7 +24,7 @@ const SongCard = (data: SongDataWrapper) => (
         </CardHeader>
         <CardBody>
             <ReactAudioPlayer
-                src={`${backendURL + data.children[1].props.src}`}
+                src={`${data.children[1].props.src}`}
                 controls
             />
         </CardBody>   

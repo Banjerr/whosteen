@@ -32,7 +32,7 @@ export default function componentSwitch(d: any, i: any) {
             />
             break;
         case 'post':
-            body = d.attributes.body.replace(/\/uploads/g, `${backendURL}/uploads`);
+            // body = d.attributes.body.replace(/\/uploads/g, `${backendURL}/uploads`);
             component = <ImageEvent credit={`post-type-${d.id}`} marker={() => <span>💌</span>} className={`post-type post-type-${d.id}`} key={i + 1} date={formatDate(d.attributes.date)} src={body} alt={d.attributes.title} card={Post} />
             break;
         default:

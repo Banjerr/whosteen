@@ -23,7 +23,7 @@ const VideoCard = (data: VideoDataWrapper) => (
             <h3>{data.children[1].props.alt}</h3>
         </CardHeader>
         <CardBody>
-            <ReactPlayer width={'100%'} height={'auto'} controls={true} url={backendURL + data.children[1].props.src} />
+            <ReactPlayer width={'100%'} height={'auto'} controls={true} url={data.children[1].props.src} />
         </CardBody>   
         <CardFooter>
             <QRModal urlToShare={`${backendURL}?shared-post=${data.children[2].props.text}`} />
