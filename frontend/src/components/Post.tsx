@@ -32,6 +32,7 @@ const PostCard = (data: PostDataWrapper) => (
 );
 
 function Post(data: PostDataWrapper) {
+    console.log('daataaa', data)
     if (data?.children[1]?.props?.src) {
         return (
             PostCard(data)
