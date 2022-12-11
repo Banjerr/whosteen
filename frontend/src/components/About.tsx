@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import contentGatherer from '../utilities/contentGatherer';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
 
 export default function AboutComponent() {
     const [loading, isLoading] = useState(true);

@@ -8,7 +8,6 @@ import Video from '../components/Video';
 import Image from '../components/Image';
 import formatDate from './formatDate';
 import Post from '../components/Post';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
 
 export default function componentSwitch(d: any, i: any) {
     let component,
