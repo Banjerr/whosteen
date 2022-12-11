@@ -1,9 +1,7 @@
 export default function postOrderer(data: any) {
     return data.sort((a: any, b: any) => {
-        const dateA = new Date(a.date).getTime();
-        const dateB = new Date(b.date).getTime();
-        console.log('a',dateA);
-        console.log('b',dateB)
+        const dateA = new Date(a.attributes.date).getTime();
+        const dateB = new Date(b.attributes.date).getTime();
         if (dateA < dateB) {
             return -1;
         }
