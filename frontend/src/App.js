@@ -92,9 +92,9 @@ function App() {
       scrollToStuff(shared_post);
     }    
   }, [shared_post]);
-  
+console.log('unordereddata', data)
   const orderedData = postOrderer(data);
-
+console.log('orderedData', orderedData)
   return (
     <div className="App">
       <header className="App-header">
