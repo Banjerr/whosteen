@@ -24,7 +24,7 @@ export default function componentSwitch(d: any, i: any) {
             component = <ImageEvent date={d.attributes.date}
                 marker={() => <span>📷</span>}
                 credit={`picture-type-${d.attributes.image.data.id}`}
-                src={backendURL + d.attributes.image.data.attributes.url}
+                src={d.attributes.image.data.attributes.url}
                 alt={d.attributes.title}
                 key={i + 1}
                 className={`picture-type picture-type-${d.id}`}

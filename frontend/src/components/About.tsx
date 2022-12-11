@@ -43,7 +43,7 @@ export default function AboutComponent() {
                         <Image
                             borderRadius='full'
                             boxSize='150px'
-                            src={backendURL + data[0].attributes.Picture.data.attributes.url}
+                            src={data[0].attributes.Picture.data.attributes.url}
                             alt='Justin Redden'
                         />
                     </Zoom>
