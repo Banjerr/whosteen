@@ -10,8 +10,7 @@ import formatDate from './formatDate';
 import Post from '../components/Post';
 
 export default function componentSwitch(d: any, i: any) {
-    let component,
-        body;
+    let component;
     switch (d.type) {        
         case 'song':
             component = <ImageEvent marker={() => <span>🎸</span>} className={`song-type song-type-${d.id}`} key={i + 1} date={d.attributes.date} credit={`song-type-${d.attributes.song.data.id}`} src={d.attributes.song.data.attributes.url} alt={d.attributes.title} card={Song} />;
@@ -31,8 +30,7 @@ export default function componentSwitch(d: any, i: any) {
             />
             break;
         case 'post':
-            // body = d.attributes.body.replace(/\/uploads/g, `${backendURL}/uploads`);
-            component = <ImageEvent credit={`post-type-${d.id}`} marker={() => <span>💌</span>} className={`post-type post-type-${d.id}`} key={i + 1} date={formatDate(d.attributes.date)} src={body} alt={d.attributes.title} card={Post} />
+            component = <ImageEvent credit={`post-type-${d.id}`} marker={() => <span>💌</span>} className={`post-type post-type-${d.id}`} key={i + 1} date={formatDate(d.attributes.date)} src={d.attributes.body} alt={d.attributes.title} card={Post} />
             break;
         default:
             component = <TextEvent key={i + 1} text="No Posts Found :(" />;
