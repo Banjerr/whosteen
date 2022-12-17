@@ -45,7 +45,7 @@ html [data-rmiz-modal-overlay="visible"] {
 
 .picture-type img , .post-type img {
   width: 100%;
-  max-width: 620px;
+  max-width: 420px;
 }
 
 .picture-type:nth-child(even) h3,
