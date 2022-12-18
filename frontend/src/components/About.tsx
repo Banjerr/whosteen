@@ -22,7 +22,6 @@ export default function AboutComponent() {
                 });
                 setData(data);
                 isLoading(false);
-                console.log('data is ', data);
             } catch (error) {
                 console.error('error fetching data', error);
                 showError(true);
@@ -48,9 +47,9 @@ export default function AboutComponent() {
                         />
                     </Zoom>
                     {
-                        data[0].Quote ? <h3>{data[0].Quote}</h3> : null
+                        data[0].Quote ? <h3>{data[0].attributes.Quote}</h3> : null
                     }            
-                    <ReactMarkdown rehypePlugins={[rehypeRaw]} children={data[0].about} />
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]} children={data[0].attributes.about} />
                 </div>
     );
 }
