@@ -38,6 +38,9 @@ export default function AboutComponent() {
                 <div
                     className='about-info'
                 >
+                    {
+                        data[0].attributes.Quote ? <h3>{data[0].attributes.Quote}</h3> : null
+                    }
                     <Zoom>
                         <Image
                             borderRadius='full'
@@ -45,10 +48,7 @@ export default function AboutComponent() {
                             src={data[0].attributes.Picture.data.attributes.url}
                             alt='Justin Redden'
                         />
-                    </Zoom>
-                    {
-                        data[0].attributes.Quote ? <h3>{data[0].attributes.Quote}</h3> : null
-                    }            
+                    </Zoom>           
                     <ReactMarkdown rehypePlugins={[rehypeRaw]} children={data[0].attributes.about} />
                 </div>
     );
