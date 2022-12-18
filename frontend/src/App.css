@@ -1,3 +1,7 @@
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 header.App-header, .about-info {
   text-align: center;
   margin: 2% 0 2%;
@@ -57,6 +61,19 @@ html [data-rmiz-modal-overlay="visible"] {
   padding: 20px;
   margin-bottom: 2%;
   text-align: center;
+}
+
+.about-info h2 {
+  font-family: 'Playball', cursive;
+}
+
+.about-info h3 {
+  margin: 0 0 26px;
+}
+
+.about-info p {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 html .chakra-card {
