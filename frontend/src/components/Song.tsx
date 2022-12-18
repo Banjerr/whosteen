@@ -2,7 +2,7 @@ import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import QRModal from './QRModal';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
+const frontendURL = process.env.REACT_APP_FRONTEND_URL;
 
 type SongDataWrapper = {
     children: SongData[];
@@ -29,7 +29,7 @@ const SongCard = (data: SongDataWrapper) => (
             />
         </CardBody>   
         <CardFooter>
-            <QRModal urlToShare={`${backendURL}?shared-post=${data.children[2].props.text}`} />
+            <QRModal urlToShare={`${frontendURL}?shared-post=${data.children[2].props.text}`} />
         </CardFooter>      
     </Card>
 );

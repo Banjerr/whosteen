@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import rehypeRaw from "rehype-raw";
 import QRModal from './QRModal';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
+const frontendURL = process.env.REACT_APP_FRONTEND_URL;
 
 type PostDataWrapper = {
     children: PostData[]
@@ -26,7 +26,7 @@ const PostCard = (data: PostDataWrapper) => (
             <ReactMarkdown rehypePlugins={[rehypeRaw]} children={data.children[1].props.src} />
         </CardBody>  
         <CardFooter>
-            <QRModal urlToShare={`${backendURL}?shared-post=${data.children[2].props.text}`} />
+            <QRModal urlToShare={`${frontendURL}?shared-post=${data.children[2].props.text}`} />
         </CardFooter>         
     </Card>
 );

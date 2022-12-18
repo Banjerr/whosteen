@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
 import QRModal from './QRModal';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
+const frontendURL = process.env.REACT_APP_FRONTEND_URL;
 
 type VideoDataWrapper = {
     children: VideoData[];
@@ -26,7 +26,7 @@ const VideoCard = (data: VideoDataWrapper) => (
             <ReactPlayer width={'100%'} height={'auto'} controls={true} url={data.children[1].props.src} />
         </CardBody>   
         <CardFooter>
-            <QRModal urlToShare={`${backendURL}?shared-post=${data.children[2].props.text}`} />
+            <QRModal urlToShare={`${frontendURL}?shared-post=${data.children[2].props.text}`} />
         </CardFooter>     
     </Card>
 );

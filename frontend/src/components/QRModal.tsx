@@ -26,8 +26,8 @@ function QRModal(props: {urlToShare: string}) {
                     <ModalCloseButton />
                     <ModalBody>
                         <QRCode value={props.urlToShare} />
-                        <SocialIcon url={`https://www.facebook.com/sharer/sharer.php?u=${props.urlToShare}`} />
-                        <SocialIcon url={`http://twitter.com/share?url=${props.urlToShare}`} />
+                        <SocialIcon target={'_blank'} url={`https://www.facebook.com/sharer/sharer.php?u=${props.urlToShare}`} />
+                        <SocialIcon target={'_blank'} url={`http://twitter.com/share?url=${props.urlToShare}`} />
                     </ModalBody>
 
                     <ModalFooter>

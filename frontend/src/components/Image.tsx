@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import Zoom from 'react-medium-image-zoom';
 import QRModal from './QRModal';
-const backendURL = process.env.REACT_APP_BACKEND_URL;
+const frontendURL = process.env.REACT_APP_FRONTEND_URL;
 
 type Img = {
     children: ImageData[];
@@ -31,7 +31,7 @@ const ImageCard = (d: Img) => (
             </Zoom>
         </CardBody>
         <CardFooter>
-            <QRModal urlToShare={`${backendURL}?shared-post=${d.children[2].props.text}`} />
+            <QRModal urlToShare={`${frontendURL}?shared-post=${d.children[2].props.text}`} />
         </CardFooter>  
     </Card>    
 );
