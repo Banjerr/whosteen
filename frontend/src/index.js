@@ -11,9 +11,16 @@ root.render(
   <React.StrictMode>
     <ChakraProvider
       theme={extendTheme({
-        fonts: {
-          body: 'Roboto Condensed',
-          h2: 'Playball'
+        styles: {
+          global: {
+            fonts: {
+              body: 'Roboto Condensed',
+              h2: 'Playball'
+            },
+            h2: {
+              fontFamily: 'Playball'
+            }
+          }
         }
       })}
     >
