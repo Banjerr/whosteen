@@ -15,7 +15,7 @@ root.render(
           global: {
             fonts: {
               body: 'Roboto Condensed',
-              h2: 'Playball'
+              h2: 'Roboto Condensed'
             },
             h2: {
               fontFamily: 'Playball'
