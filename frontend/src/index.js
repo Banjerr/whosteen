@@ -12,14 +12,9 @@ root.render(
     <ChakraProvider
       theme={extendTheme({
         styles: {
-          global: {
-            fonts: {
-              body: 'Roboto Condensed',
-              h2: 'Roboto Condensed'
-            },
-            h2: {
-              fontFamily: 'Playball'
-            }
+          fonts: {
+            body: 'Roboto Condensed',
+            heading: "'Playball', 'Roboto Condensed"
           }
         }
       })}
